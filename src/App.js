@@ -4,25 +4,61 @@ import "./App.css";
 function App() {
 
 	return (
-		<div className="p-10">
-			<div className="flex flex-col gap-10">
-				<select className="select select-bordered select-lg w-full max-w-xs">
-					<option disabled selected>JAVA</option>
-					<option>JAVA</option>
-					<option>React</option>
-				</select>
-				<select className="select select-bordered select-lg w-full max-w-xs">
-					<option disabled selected>JAVA</option>
-					<option>Orientação de objetos</option>
-					<option>UseState</option>
-				</select>
-				<button className="btn btn-outline w-40">Enviar</button>
-			</div>
+		<div class="flex flex-row bg-gray-400">
+			<aside class="w-1/5">
+				<div class="mockup-code">
+					<pre data-prefix="$"><code>conversa 1</code></pre>
+					<pre data-prefix=">"><code>conversa 2.</code></pre>
+					<pre data-prefix=">"><code>conversa 3</code></pre>
+				</div>
+			</aside>
+			<div id="chatBoot">
 
-			<label class="input input-bordered flex items-center gap-2 h-40 my-10">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>
-				<input type="text" class="grow" placeholder="mensagem" />
-			</label>
+				<div class="container-avatar">
+
+					<div class="chat chat-start p-5">
+						<div class="chat-image avatar">
+							<figure class="w-10 rounded-full">
+								<img alt="Tailwind CSS chat bubble component"
+									src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+							</figure>
+						</div>
+						<div class="chat-header">
+							Usuário X
+							<time class="text-xs opacity-50">12:45</time>
+						</div>
+						<div class="chat-bubble">mensagem usuário</div>
+						<div class="chat-footer opacity-50">
+							enviado
+						</div>
+					</div>
+
+					<div class="chat chat-end p-5">
+						<div class="chat-image avatar">
+							<figure class="w-10 rounded-full">
+								<img alt="Tailwind CSS chat bubble component"
+									src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+							</figure>
+						</div>
+
+						<div class="chat-header">
+							Robô
+							<time class="text-xs opacity-50">12:46</time>
+						</div>
+						<div class="chat-bubble">mensagem robô</div>
+						<div class="chat-footer opacity-50">
+							visualizado 12:46
+						</div>
+					</div>
+
+				</div>
+
+				<div class="w-full flex items-end my-20">
+					<input type="text" placeholder="Inicie a conversa aqui " class=" text-gray-900 input input-bordered w-11/12 mx-5" />
+					<button class="btn btn-outline mx-10">Enviar</button>
+				</div>
+
+			</div>
 		</div>
 	);
 }
