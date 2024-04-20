@@ -19,7 +19,7 @@ function App() {
 		setQuestion('');
 
 		try {
-			const response = await axios.post('http://localhost:8080/ask', { question });
+			const response = await axios.post('http://localhost:8080/pergunta', { question });
 			const botMessage = { name: 'Robô', message: response.data, timestamp: new Date().toISOString() };
 
 			// Atualize o histórico uma única vez, incluindo a pergunta e a resposta
@@ -43,14 +43,14 @@ function App() {
 					{/* Renderização condicional das mensagens */}
 					{history.map((msg, index) => (
 						<div key={index} className={`chat ${msg.name === 'Usuário' ? 'chat-start' : 'chat-end'} p-5`}>
-							<div className="chat-image avatar">
-								<figure className="w-10 rounded-full">
-									<img alt="Avatar" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+							<div className="chat-image avatar rounded-md mx-5 border-warning-content">
+								<figure className="w-20">
+									<img alt="Avatar" src="https://media.licdn.com/dms/image/C4E03AQH7qqguks_2gA/profile-displayphoto-shrink_800_800/0/1661427371063?e=2147483647&v=beta&t=TS4txeO4uU8m2JHdGyNRYa9PXTYFgX-JBZVWxjQyuOM" className='rounded-md' />
 								</figure>
 							</div>
-							<div className="chat-header">
+							<div className="chat-header gap-2">
 								{msg.name}
-								<time className="text-xs opacity-50">{new Date(msg.timestamp).toLocaleTimeString()}</time>
+								<time className="text-xs opacity-50 px-2">{new Date(msg.timestamp).toLocaleTimeString()}</time>
 							</div>
 							<div className="chat-bubble">{msg.message}</div>
 							<div className="chat-footer opacity-50">
