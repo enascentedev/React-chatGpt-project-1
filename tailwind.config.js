@@ -4,7 +4,6 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    // Aqui pode ir qualquer configuração de tema do Tailwind que você deseje estender
   },
   plugins: [
     require("daisyui"),

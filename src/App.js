@@ -8,7 +8,7 @@ function App() {
 	const [history, setHistory] = useState([]);
 	const [loading, setLoading] = useState(false);
 	const userAvatar = "https://media.licdn.com/dms/image/C4E03AQH7qqguks_2gA/profile-displayphoto-shrink_800_800/0/1661427371063?e=2147483647&v=beta&t=TS4txeO4uU8m2JHdGyNRYa9PXTYFgX-JBZVWxjQyuOM"; // URL da foto do usuário
-	const botAvatar = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp6HCnbbPoVAW22W0GK_KwZc37vp6tsppS9g&s"; // URL da foto do Robô, substitua pelo URL correto
+	const botAvatar = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp6HCnbbPoVAW22W0GK_KwZc37vp6tsppS9g&s"; // URL da foto do Robô
 
 	const handleQuestionChange = (event) => {
 		setQuestion(event.target.value);
@@ -35,16 +35,12 @@ function App() {
 		setLoading(false); // Parar de carregar
 	};
 	return (
-		<div className="flex flex-row bg-base-100 overflow-y-auto h-screen">
+		<div className="flex flex-row bg-base-100 overflow-y-auto h-screen w-full">
 
-			<aside className="w-1/5 bg-base-100">
+			<aside className="w-60 bg-base-100">
 				<div className="mockup-code !bg-base-100 text-primary">
 					<pre data-prefix="$"><code>conversa 1</code></pre>
-					<pre data-prefix=">"><code>conversa 2.</code></pre>
-					<pre data-prefix=">"><code>conversa 3</code></pre>
-
 				</div>
-
 			</aside>
 			<div id="chatBoot">
 				<div className="container-avatar">
@@ -54,7 +50,7 @@ function App() {
 								Estilos
 								<svg width="12px" height="12px" class="h-2 w-2 fill-current opacity-60 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048"><path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path></svg>
 							</div>
-							<ul tabindex="0" class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-52">
+							<ul tabindex="0" class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-40">
 								<li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Design-1" value="default" /></li>
 								<li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Design-2" value="retro" /></li>
 								<li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Design-3" value="cyberpunk" /></li>
