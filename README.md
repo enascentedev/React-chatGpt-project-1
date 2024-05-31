@@ -7,10 +7,7 @@ Este é um projeto full stack que utiliza React para o front-end e Java para o b
 ## Vídeo Demonstrativo
 
 <div align="center">
-  <video width="600" controls>
-    <source src="./public/chatGpt-1.mp4" type="video/mp4">
-    Seu navegador não suporta a tag de vídeo.
-  </video>
+  <img src="./public/chatGpt-1.gif" alt="Demonstração do Projeto" width="600">
 </div>
 
 ## Funcionalidades
