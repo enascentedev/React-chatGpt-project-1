@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" role="img" aria-label="Avatar do robô">
+  <rect width="80" height="80" rx="12" fill="#0f766e"/>
+  <rect x="20" y="26" width="40" height="32" rx="8" fill="#e5e7eb"/>
+  <circle cx="32" cy="41" r="4.5" fill="#0f766e"/>
+  <circle cx="48" cy="41" r="4.5" fill="#0f766e"/>
+  <path d="M40 26v-8M34 18h12" stroke="#e5e7eb" stroke-width="3" stroke-linecap="round"/>
+</svg>

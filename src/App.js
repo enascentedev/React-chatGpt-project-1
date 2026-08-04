@@ -7,8 +7,8 @@ function App() {
 	const [answer, setAnswer] = useState('');
 	const [history, setHistory] = useState([]);
 	const [loading, setLoading] = useState(false);
-	const userAvatar = "https://media.licdn.com/dms/image/C4E03AQH7qqguks_2gA/profile-displayphoto-shrink_800_800/0/1661427371063?e=2147483647&v=beta&t=TS4txeO4uU8m2JHdGyNRYa9PXTYFgX-JBZVWxjQyuOM"; // URL da foto do usuário
-	const botAvatar = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp6HCnbbPoVAW22W0GK_KwZc37vp6tsppS9g&s"; // URL da foto do Robô
+	const userAvatar = `${process.env.PUBLIC_URL}/avatar-usuario.svg`; // Avatar local do usuário
+	const botAvatar = `${process.env.PUBLIC_URL}/avatar-robo.svg`; // Avatar local do robô
 
 	const handleQuestionChange = (event) => {
 		setQuestion(event.target.value);
